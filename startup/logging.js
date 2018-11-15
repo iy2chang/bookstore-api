@@ -20,10 +20,4 @@ module.exports = function() {
   //     db: "mongodb://localhost:27017/bookstore",
   //     level: "info"
   //   });
-  winston.addColors({
-    error: "red",
-    warn: "yellow",
-    info: "cyan",
-    debug: "green"
-  });
 };
