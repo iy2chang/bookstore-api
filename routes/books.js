@@ -6,7 +6,7 @@ const auth = require("../middleware/auth");
 
 // get all books
 router.get("/", async (req, res) => {
-  const books = await Book.find().sort("title");
+  const books = await Book.find().select("-__v");
   res.send(books);
 });
 
